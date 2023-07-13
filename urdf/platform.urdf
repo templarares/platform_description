@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<robot name="platform">
+  <mujoco>
+    <compiler
+        meshdir="../mujoco/meshes/platform/"
+        balanceinertia="true"
+        discardvisual="false" />
+  </mujoco>
+  <link name="base_link" />
+  <link name="cube">
+    <visual>
+      <geometry>
+        <mesh filename="package://platform_description/meshes/platform/cube.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+  </link>
+</robot>

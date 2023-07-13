@@ -1,0 +1,2 @@
+xmlModelPath: "@PROJECT_SOURCE_DIR@/mujoco/platform.xml"
+pdGainsPath: "@PROJECT_SOURCE_DIR@/mujoco/pdgains.dat"

@@ -1,0 +1,13 @@
+<package>
+  <name>platform_description</name>
+  <version>1.0.0</version>
+  <description>Description package for a platform on ground</description>
+  <author>Fix Me</author>
+  <maintainer email="fixme@to.do">Fix Me</maintainer>
+  <license>BSD</license>
+  <url>https://fixme.to.do</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
+
+

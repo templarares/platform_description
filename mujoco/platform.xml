@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<mujoco model="platform">
+    <compiler angle="radian" meshdir="meshes/platform/"/>
+    
+    <size njmax="500" nconmax="100"/>
+    <default>
+        <default class="collision">
+          <geom condim="3" type="mesh" group="0" />
+        </default>
+        <default class="visual">
+          <geom condim="3" type="mesh" group="1" conaffinity="0" contype="0" />
+        </default>
+    </default>
+    <asset>
+        <mesh name="cube" file="cube.stl"/>
+    </asset>
+    <worldbody>
+	<body name="platform">
+	    <body name="cube" pos="0 0 0">
+            <inertial pos="0 0 0" mass="1000" diaginertia="500 500 500"/>
+	    <geom name="cube" type="mesh" mesh="cube"/>
+	    </body>
+	</body>
+
+    </worldbody>
+    <!-- Check how this behaves when manipulated
+    <actuator>
+        <motor name="driving_wheel_shaft_motor" joint="driving_wheel_shaft" />
+        <motor name="driving_wheel_motor" joint="driving_wheel" />
+    </actuator>
+    -->
+</mujoco>
