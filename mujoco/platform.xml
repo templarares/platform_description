@@ -15,12 +15,15 @@
         <mesh name="cube" file="cube.stl"/>
     </asset>
     <worldbody>
-	<body name="platform">
-	    <body name="cube" pos="0 0 0">
-            <inertial pos="0 0 0" mass="1000" diaginertia="500 500 500"/>
-	    <geom name="cube" type="mesh" mesh="cube"/>
-	    </body>
+	<body name="env">
+	  <geom name="table" class="collision" type="box" mass="10" size="0.25 0.275 0.02875" pos="0.536428 0.0 0.7"/>
 	</body>
+	    
+	<body name="cube" pos="0 0 0">
+	  <freejoint name="root" />
+	  <geom name="cube" type="box" class="collision" size="0.1 0.1 0.1" pos="0.32 0.0 0.702" mass="1" condim="6"/>
+	</body>
+
 
     </worldbody>
     <!-- Check how this behaves when manipulated

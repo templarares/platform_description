@@ -7,6 +7,11 @@
         discardvisual="false" />
   </mujoco>
   <link name="base_link" />
+  <joint name="cube" type="fixed">
+    <parent link="base_link"/>
+    <child link="cube"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+  </joint>
   <link name="cube">
     <visual>
       <geometry>

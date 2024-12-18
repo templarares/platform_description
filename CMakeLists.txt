@@ -31,6 +31,7 @@ else()
 endif()
 
 configure_file(mujoco/platform.yaml $ENV{HOME}/.config/mc_rtc/mc_mujoco/platform.yaml)
+configure_file(module/module.yaml "${CMAKE_CURRENT_BINARY_DIR}/module/module.yaml")
 
 install(DIRECTORY convex/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/convex)

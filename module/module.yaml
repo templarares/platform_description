@@ -1,0 +1,12 @@
+# Where the robot data is located
+# The JSON loader expects the data to be in certain locations relative to this path as described in:
+# https://jrl-umi3218.github.io/mc_rtc/tutorials/advanced/new-robot.html#organization-of-your-robot-description-package
+path: "@CMAKE_CURRENT_SOURCE_DIR@"
+# Name of the RobotModule/Default name of the robot when loaded with this module
+name: platform
+# Where the URDF is located
+urdf_path: "@CMAKE_CURRENT_SOURCE_DIR@/urdf/platform.urdf"
+# Not a fixed based robot
+fixed: false
+default_attitude: [1, 0, 0, 0, 0, 0, 0.15]
+#default_attitude: [0.9553, 0, 0, -0.2987, 0.237, 1.0, 1.18855]
